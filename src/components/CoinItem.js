@@ -25,8 +25,8 @@ const CoinItem = ({coin}) => {
           </p>
         )}    
     </td>
-    <td className='w-[180px] hidden md:table-cell'>{coin.total_volume}</td>
-    <td className='w-[180px] hidden sm:table-cell'>{coin.market_cap}</td>
+    <td className='w-[180px] hidden md:table-cell'>{coin.total_volume.toLocaleString()}</td>
+    <td className='w-[180px] hidden sm:table-cell'>{coin.market_cap.toLocaleString()}</td>
     <td>
         <Sparklines data = {coin.sparkline_in_7d.price}>
             <SparklinesLine color = 'teal'/>
