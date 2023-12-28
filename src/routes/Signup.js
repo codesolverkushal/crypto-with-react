@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AiFillLock, AiOutlineMail } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
@@ -36,9 +36,11 @@ const Signup = () => {
               <AiFillLock className='absolute right-2 top-3 text-gray-400' />
             </div>
           </div>
-          <button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl'>
+          <Link to ="/signIn">
+          <button  className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl'>
             Sign up
           </button>
+          </Link>
         </form>
         <p className='my-4'>
           Already have an account?{' '}

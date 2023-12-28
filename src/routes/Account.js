@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,12 +16,12 @@ const Account = () => {
             </div>
           </div>
           <div>
-            <button
+            <Link to="/"
             
               className='border px-6 py-2 rounded-2xl shadow-lg hover:shadow-2xl'
             >
               Sign Out
-            </button>
+            </Link>
           </div>
         </div>
         <div className='flex justfiy-between items-center my-12 py-8 rounded-div'>
