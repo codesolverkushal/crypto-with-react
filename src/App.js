@@ -9,6 +9,7 @@ import Account from './routes/Account';
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import CoinPage from "./components/CoinPage";
+import Footer from "./components/Footer";
 function App() {
    const [coins,setCoins] = useState([]);
 
@@ -35,6 +36,7 @@ function App() {
           </Route>
 
          </Routes>
+         <Footer/>
      </ThemeProvider>
   );
 }
